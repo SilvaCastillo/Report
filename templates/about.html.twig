@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="container">
+	<div class="image-section">
+		<img src="{{ asset("img/php.png") }}" alt="Bild på php elefant">
+	</div>
+	<div class="content-section">
+		<div class="content">
+			{{ include('content/about.markdown.twig')|markdown_to_html }}
+			<div class="button">
+				<a href="https://github.com/dbwebb-se/mvc" target="_blanc">Kursens GitHub</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

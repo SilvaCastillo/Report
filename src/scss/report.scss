@@ -1,0 +1,36 @@
+.headline {
+    text-align: center;
+    color: $headline;
+    margin-bottom: 40px;
+}
+
+.container-report {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    margin-bottom: 76px;
+}
+
+.content-section-report {
+    width: 100%;
+
+    .title {
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        color: $section-h2;
+        font-weight: normal;
+        font-size: 21px;
+    }
+
+    p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+}

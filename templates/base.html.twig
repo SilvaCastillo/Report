@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            
+            <div class="banner-container" role="banner">
+                <div class="navbar">
+                    <a  class="logo" href="{{ url("home") }}">
+                        MVC
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a href="{{ url("home") }}">Home</a></li>
+                            <li><a href="{{ path("about") }}">About</a></li>
+                            <li><a href="{{ path("report") }}">Report</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h1 class="title">{{headline.name}}</h1>
+            </div>
+        </div>
+        
+        {% block content %}
+        default content
+        {% endblock %}
+    </body>
+    <div class="footer">
+        <div class="social">
+            <ul>
+                <li><a href="{{ url("home") }}">Home</a></li>
+                <li><a href="{{ path("about") }}">About</a></li>
+                <li><a href="{{ path("report") }}">Report</a></li>
+            </ul>
+        </div>
+        <div class="footer-text">
+            <p>
+                © Pablo S 2022
+            </p>
+        </div>
+    </div>
+</html>

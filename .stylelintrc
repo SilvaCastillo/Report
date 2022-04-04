@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss"
+    ],
+    "rules": {
+        "indentation": [
+            4,
+            {
+                "except": [
+                    "value"
+                ]
+            }
+        ],
+        "at-rule-no-unknown": null,
+        "no-descending-specificity": null,
+        "selector-max-compound-selectors": 5
+    },
+    "ignoreFiles": [
+        "**/node_modules/",
+        "shared/fontawesome/**/*.scss",
+        "**/*.css",
+        "**/*.min.css"
+    ]
+}

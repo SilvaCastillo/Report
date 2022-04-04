@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol,
+ul {
+    padding-left: 1.5em;
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $background;
+}
+
+.header,
+.footer {
+    flex: 0 0 auto;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 17px;
+}
